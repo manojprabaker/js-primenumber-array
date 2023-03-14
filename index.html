@@ -1,0 +1,42 @@
+<!Doctype html>
+<html> 
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="JS">
+		
+		
+		
+		
+	</head>
+	<body>
+	
+	<script>
+	
+	
+	
+	
+	function prime(arr){
+    let b=[];
+	for(j=0;j<arr.length;j++)
+	{
+        let check=1;
+        for(i=0;i<=arr[j];i++)
+		{
+            if (arr[j]%i == 0)
+			{
+                check++;
+            } 
+        }
+        if(check==3)
+		{
+            b.push(arr[j])
+        }
+    }
+console.log(b)
+}
+
+prime([4,1,99,470,13,9,20,17,11,2,8,3,5]);
+	</script>
+	</body>
+	</html>
